@@ -35,7 +35,9 @@ int main() {
 
             if (great_grandchild_pid == 0) {
 
-                for (int i = 0; i < 1000000; ++i) {}
+                for (int i = 0; i < 1000000; ++i) {
+                    printf("Iteration %d\n", i);
+                }
             } else {
 
                 // waiting for the great-grandchild process to finish

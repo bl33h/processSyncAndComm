@@ -6,7 +6,6 @@ FileName:
 Creation: 06/02/2024
 Last modification: 06/02/2024
 ------------------------------------------------------------------------------*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -17,9 +16,15 @@ int main() {
 
     start = clock();
 
-    for (int i = 0; i < 1000000; ++i) {}
-    for (int i = 0; i < 1000000; ++i) {}
-    for (int i = 0; i < 1000000; ++i) {}
+    for (int i = 0; i < 1000000; ++i) {
+        printf("Iteration %d\n", i);
+    }
+    for (int i = 0; i < 1000000; ++i) {
+        printf("Iteration %d\n", i);
+    }
+    for (int i = 0; i < 1000000; ++i) {
+        printf("Iteration %d\n", i);
+    }
 
     // last loop time
     end = clock();
